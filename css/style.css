@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: rgb(113, 181, 228);
+  background: linear-gradient(
+    113deg,
+    rgba(113, 181, 228, 1) 0%,
+    rgba(107, 135, 202, 1) 31%,
+    rgba(141, 122, 199, 1) 100%
+  );
+  display: grid;
+  place-items: center;
+}
+.container {
+  background-color: white;
+  width: 50%;
+  padding: 40px;
+  border-radius: 5px;
+}
+.title {
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 45px;
+  background: rgb(113, 181, 228);
+  background: linear-gradient(
+    113deg,
+    rgba(113, 181, 228, 1) 0%,
+    rgba(107, 135, 202, 1) 31%,
+    rgba(141, 122, 199, 1) 100%
+  );
+  left: 0;
+  bottom: -5px;
+}
+h2 {
+  font-size: 35px;
+}
+
+.input__divs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  gap: 10px;
+}
+label {
+  font-size: 20px;
+}
+.input {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid rgb(44, 42, 42, 0.425);
+  border-radius: 5px;
+}
+.gender__section {
+  margin-top: 30px;
+}
+.gender__section h2 {
+  margin-bottom: 20px;
+}
+.gender__div {
+  display: flex;
+}
+.gender__div label {
+  width: 33%;
+  display: flex;
+  gap: 7px;
+}
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgb(113, 181, 228);
+  background: linear-gradient(
+    113deg,
+    rgba(113, 181, 228, 1) 0%,
+    rgba(107, 135, 202, 1) 31%,
+    rgba(141, 122, 199, 1) 100%
+  );
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* -----------------------Table-------------------------- */
+.table__wrapper {
+  width: 100%;
+  height: 100vh;
+  background: rgb(120, 85, 203);
+  background: linear-gradient(
+    51deg,
+    rgba(120, 85, 203, 1) 0%,
+    rgba(107, 135, 202, 1) 39%,
+    rgba(191, 81, 194, 1) 100%
+  );
+  display: grid;
+  place-items: center;
+}
+.table{
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+  
+}
+.table th, .table td{
+  padding: 20px 30px;
+}
+.table thead tr{
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+.table tbody tr:nth-child(even){
+  background-color: #f5f5f5;
+  
+}
